@@ -1,0 +1,177 @@
+{
+  "Tomato_Bacterial_spot": {
+    "common_name": "Bacterial spot",
+    "category": "bacterial",
+    "symptoms": "Small, dark, water-soaked leaf spots that may develop yellow margins; spots can also appear on stems and fruit.",
+    "cause": "Bacterial infection, often spread by splashing water, contaminated tools, and infected planting material.",
+    "organic_treatment": [
+      "Remove badly affected leaves and dispose of them away from the crop.",
+      "Avoid handling plants while they are wet and disinfect tools between plants."
+    ],
+    "chemical_active_ingredients": ["Copper oxychloride"],
+    "prevention": [
+      "Use clean seed and healthy transplants.",
+      "Rotate away from tomato and related crops where practical.",
+      "Water at the base of plants and improve airflow."
+    ],
+    "requires_purchase": true,
+    "product_type": "copper-based bactericide/fungicide",
+    "no_cure": false
+  },
+  "Tomato_Early_blight": {
+    "common_name": "Early blight",
+    "category": "fungal",
+    "symptoms": "Brown leaf spots, often with concentric rings, usually beginning on older lower leaves; affected leaves may yellow and fall.",
+    "cause": "Fungal infection that persists in crop debris and spreads in warm, wet conditions.",
+    "organic_treatment": [
+      "Remove affected lower leaves and crop debris.",
+      "Use mulch to reduce soil splash and keep foliage dry when watering."
+    ],
+    "chemical_active_ingredients": ["Mancozeb", "Copper oxychloride"],
+    "prevention": [
+      "Rotate crops and remove volunteer tomato plants.",
+      "Space plants to improve airflow and avoid overhead watering."
+    ],
+    "requires_purchase": true,
+    "product_type": "fungicide",
+    "no_cure": false
+  },
+  "Tomato_Late_blight": {
+    "common_name": "Late blight",
+    "category": "fungal",
+    "symptoms": "Fast-spreading, water-soaked dark lesions on leaves and stems; white growth may appear on leaf undersides in humid conditions.",
+    "cause": "Late blight pathogen favored by cool, humid weather and spread by wind and water.",
+    "organic_treatment": [
+      "Remove and safely dispose of infected plants promptly to limit spread.",
+      "Keep foliage dry and seek local extension advice when symptoms spread quickly."
+    ],
+    "chemical_active_ingredients": ["Metalaxyl + mancozeb", "Copper oxychloride"],
+    "prevention": [
+      "Inspect crops frequently during cool, wet weather.",
+      "Use healthy planting material, allow airflow, and avoid overhead irrigation."
+    ],
+    "requires_purchase": true,
+    "product_type": "fungicide",
+    "no_cure": false
+  },
+  "Tomato_Leaf_Mold": {
+    "common_name": "Leaf mold",
+    "category": "fungal",
+    "symptoms": "Pale or yellow patches on upper leaf surfaces with olive-green to brown growth underneath, often in humid conditions.",
+    "cause": "Fungal infection favored by high humidity and poor airflow, especially under cover.",
+    "organic_treatment": [
+      "Remove heavily affected leaves and improve ventilation around plants.",
+      "Reduce leaf wetness and avoid crowding."
+    ],
+    "chemical_active_ingredients": ["Mancozeb", "Copper oxychloride"],
+    "prevention": [
+      "Provide good spacing and ventilation.",
+      "Water at the base of plants and remove infected crop debris."
+    ],
+    "requires_purchase": true,
+    "product_type": "fungicide",
+    "no_cure": false
+  },
+  "Tomato_Septoria_leaf_spot": {
+    "common_name": "Septoria leaf spot",
+    "category": "fungal",
+    "symptoms": "Many small, round spots with pale centers and dark edges, usually starting on lower leaves; affected leaves may yellow and drop.",
+    "cause": "Fungal infection that survives on crop debris and spreads by rain splash and handling wet plants.",
+    "organic_treatment": [
+      "Remove affected lower leaves and dispose of crop debris.",
+      "Mulch soil to limit splash and avoid working among wet plants."
+    ],
+    "chemical_active_ingredients": ["Mancozeb", "Copper oxychloride"],
+    "prevention": [
+      "Rotate crops and keep volunteer tomato plants under control.",
+      "Water at the base and leave enough space between plants."
+    ],
+    "requires_purchase": true,
+    "product_type": "fungicide",
+    "no_cure": false
+  },
+  "Tomato_Spider_mites_Two_spotted_spider_mite": {
+    "common_name": "Two-spotted spider mites",
+    "category": "pest",
+    "symptoms": "Fine pale stippling on leaves, bronzing, and sometimes fine webbing, especially on leaf undersides during hot, dry conditions.",
+    "cause": "Feeding by spider mites, which can multiply rapidly in hot, dry weather.",
+    "organic_treatment": [
+      "Remove heavily infested leaves and monitor leaf undersides regularly.",
+      "Reduce dust and water-stress; protect naturally occurring beneficial insects."
+    ],
+    "chemical_active_ingredients": ["Abamectin"],
+    "prevention": [
+      "Scout crops regularly, especially during hot, dry periods.",
+      "Avoid unnecessary broad-spectrum pesticide use that can harm mite predators."
+    ],
+    "requires_purchase": true,
+    "product_type": "miticide/acaricide",
+    "no_cure": false
+  },
+  "Tomato__Target_Spot": {
+    "common_name": "Target spot",
+    "category": "fungal",
+    "symptoms": "Brown circular leaf lesions with concentric rings; spots may also affect stems and fruit.",
+    "cause": "Fungal infection favored by warm, humid conditions and prolonged leaf wetness.",
+    "organic_treatment": [
+      "Remove affected leaves and crop debris.",
+      "Improve airflow and avoid wetting foliage when watering."
+    ],
+    "chemical_active_ingredients": ["Mancozeb", "Copper oxychloride"],
+    "prevention": [
+      "Use crop rotation and healthy transplants.",
+      "Space plants well and reduce leaf wetness."
+    ],
+    "requires_purchase": true,
+    "product_type": "fungicide",
+    "no_cure": false
+  },
+  "Tomato__Tomato_YellowLeaf__Curl_Virus": {
+    "common_name": "Tomato yellow leaf curl disease",
+    "category": "viral",
+    "symptoms": "Upward-curling leaves, yellowing, stunted growth, and reduced fruit set; symptoms are often strongest on new growth.",
+    "cause": "Tomato yellow leaf curl virus, commonly spread by whiteflies.",
+    "organic_treatment": [],
+    "chemical_active_ingredients": [],
+    "prevention": [
+      "Use healthy transplants and protect young plants from whiteflies.",
+      "Control weeds that can host whiteflies and monitor plants frequently."
+    ],
+    "requires_purchase": false,
+    "product_type": null,
+    "no_cure": true,
+    "management_steps": [
+      "Remove and dispose of severely infected plants to reduce sources of virus.",
+      "Manage whiteflies using physical and cultural controls and seek local extension guidance.",
+      "Do not treat the virus as curable; protect healthy plants from further spread."
+    ]
+  },
+  "Tomato__Tomato_mosaic_virus": {
+    "common_name": "Tomato mosaic disease",
+    "category": "viral",
+    "symptoms": "Mottled light and dark green leaves, leaf distortion, and stunted growth; fruit may ripen unevenly.",
+    "cause": "Tomato mosaic virus, which spreads through infected plant material and contaminated hands or tools.",
+    "organic_treatment": [],
+    "chemical_active_ingredients": [],
+    "prevention": [
+      "Use healthy seed and transplants and clean tools between plants.",
+      "Wash hands after handling suspected infected plants and remove crop debris."
+    ],
+    "requires_purchase": false,
+    "product_type": null,
+    "no_cure": true,
+    "management_steps": [
+      "Remove and dispose of infected plants; there is no curative treatment.",
+      "Clean tools and wash hands after handling plants to limit mechanical spread.",
+      "Avoid saving seed from affected plants."
+    ]
+  },
+  "Tomato_healthy": {
+    "message": "No tomato disease was identified. Continue checking plants regularly for changes.",
+    "general_care_tips": [
+      "Water at the base of plants and avoid keeping leaves wet.",
+      "Maintain space between plants for airflow.",
+      "Remove crop debris and check leaves regularly, including their undersides."
+    ]
+  }
+}

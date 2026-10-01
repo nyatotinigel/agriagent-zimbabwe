@@ -1,0 +1,19 @@
+{
+  "short_name": "AgriAgent",
+  "name": "AgriAgent by OGK",
+  "description": "Tomato leaf diagnosis and treatment guidance.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fbfcf8",
+  "theme_color": "#1e503a",
+  "icons": [
+    {
+      "src": "/ogk-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
