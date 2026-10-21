@@ -19,15 +19,21 @@ AgriAgent is a tomato-leaf diagnosis and management app for farmers in Zimbabwe.
    Pop-Location
    ```
 
-3. Copy `.env.example` to `.env`, then set `TOMATO_MODEL_PATH` to the supplied trained model file. The current model file is outside this repository, so the app does not copy or retrain it.
-
-4. Start the API from the repository root:
+3. Keep the trained model on your computer; it is intentionally excluded from GitHub. Set its path in PowerShell (replace the example with the path to your copy):
 
    ```powershell
-   .\api\venv312\Scripts\python.exe -m uvicorn api.main:app --host 0.0.0.0 --port 8000
+   $env:TOMATO_MODEL_PATH = 'C:\path\to\mobileNetV3Large.keras'
    ```
 
-   Open [http://localhost:8000](http://localhost:8000). FastAPI serves the built PWA when `frontend/build` exists. For frontend development with live reload, run `npm start` from `frontend`; the CRA proxy forwards `/api` and `/predict` to port 8000.
+   Optional integrations can be configured in a local `.env` copied from `.env.example`. Never commit `.env` or API keys.
+
+4. Start the API from the repository root, bound to this PC:
+
+   ```powershell
+   .\api\venv312\Scripts\python.exe -m uvicorn api.main:app --host 127.0.0.1 --port 8000
+   ```
+
+   Open [http://localhost:8000](http://localhost:8000). FastAPI serves the built PWA when `frontend/build` exists. The `127.0.0.1` binding keeps the app accessible only from your PC. For frontend development with live reload, run `npm start` from `frontend`; the CRA proxy forwards `/api` and `/predict` to port 8000.
 
 ## Configuration
 
@@ -42,11 +48,9 @@ AgriAgent is a tomato-leaf diagnosis and management app for farmers in Zimbabwe.
 
 The LLM only phrases the diagnosis and supplied knowledge-base/Places data. It is instructed not to invent products, active ingredients, dosages, or cures. Viral results use management-only guidance; missing LLM credentials fall back to deterministic knowledge-base wording.
 
-## Railway / Docker
+## Docker
 
-The root `Dockerfile` builds the React bundle and installs the API into one image. Configure a Railway PostgreSQL service and set `DATABASE_URL`. Set `TOMATO_MODEL_PATH` to the model file's path inside the container or mounted volume. Do not commit model weights or API keys. Add `GOOGLE_PLACES_API_KEY` and either `GEMINI_API_KEY` or `OPENAI_API_KEY` to enable those optional integrations.
-
-The current model artifact is not inside this workspace. A deployable Railway service therefore needs that file made available at runtime before the container can start. The exact upload/mount location depends on where you choose to store the model.
+The root `Dockerfile` builds the React bundle and installs the API into one image. The trained classifier model and `.env` secrets are excluded from the Git repository. For local Docker use, provide the model at the configured container path and pass any optional configuration securely at runtime.
 
 ## API
 
